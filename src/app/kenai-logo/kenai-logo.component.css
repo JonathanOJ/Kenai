@@ -1,0 +1,14 @@
+.logo {
+  color: transparent;
+  background: linear-gradient(
+    to left,
+    rgba(255, 38, 122, 1),
+    rgba(255, 166, 52, 1)
+  );
+  width: fit-content;
+  -webkit-background-clip: text;
+  font-family: "Mukta";
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 20px;
+}

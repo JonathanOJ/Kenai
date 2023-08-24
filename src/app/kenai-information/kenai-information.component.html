@@ -1,0 +1,46 @@
+<section style="display: flex; flex-direction: column; gap: 3vh; color: white">
+  <span
+    style="
+      width: 49px;
+      height: 24px;
+      border-radius: 0px 8px 0px 8px;
+      background-color: rgba(24, 24, 24, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Open Sans';
+      font-weight: 600;
+      font-size: 14px;
+      color: rgba(255, 166, 52, 1);
+    "
+    >{{ category }}</span
+  >
+  <div style="display: flex; align-items: center">
+    <div class="rating">
+      <ng-container *ngFor="let value of [5, 4, 3, 2, 1]">
+        <input
+          type="radio"
+          [name]="'rating_' + itemId"
+          [value]="value"
+          [disabled]="true"
+          [checked]="value === avaliation"
+        />
+        <label [for]="value + '_' + itemId"></label>
+      </ng-container>
+    </div>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      "
+    >
+      <mat-icon svgIcon="clock-outline"></mat-icon>
+      <span>{{ formatedHour() }}</span>
+    </div>
+  </div>
+  <h1>{{ tittleMovie }}</h1>
+  <p>{{ description }}</p>
+  <button>Assistir agora</button>
+</section>
