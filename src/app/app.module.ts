@@ -12,6 +12,7 @@ import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { KenaiListComponent } from './kenai-list/kenai-list.component';
 import { KenaiInformationComponent } from './kenai-information/kenai-information.component';
+import { KenaiGalleryComponent } from './kenai-gallery/kenai-gallery.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { KenaiInformationComponent } from './kenai-information/kenai-information
     KenaiHeaderButtonsComponent,
     KenaiListComponent,
     KenaiInformationComponent,
+    KenaiGalleryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, MatIconModule, HttpClientModule],
   providers: [],

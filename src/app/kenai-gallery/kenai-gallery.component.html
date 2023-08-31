@@ -1,0 +1,29 @@
+<section>
+  <div style="width: 155px">
+    <div>
+      <h3
+        style="
+          font-weight: 600;
+          color: white;
+          height: 44px;
+          font-size: 32px;
+          margin-top: 8vh;
+        "
+      >
+        Populares
+      </h3>
+    </div>
+    <div
+      style="width: 61px; background: rgba(255, 166, 52, 1); height: 1.5px"
+    ></div>
+  </div>
+  <div style="display: flex; gap: 30px">
+    <div *ngFor="let movie of movieItens" class="gallery-item">
+      <img
+        [src]="movie.image"
+        alt="poster filme"
+        style="width: 300px; height: 440px"
+      />
+    </div>
+  </div>
+</section>

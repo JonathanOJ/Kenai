@@ -9,53 +9,63 @@ export class BuildMovieItensService {
   getMovieItens() {
     let movieItens = [
       {
+        cardId: 1,
         category: 'Ação',
         totalTime: '1h 30m',
-        image:
-          'https://www.themoviedb.org/t/p/w220_and_h330_face/6vcDalR50RWa309vBH1NLmG2rjQ.jpg',
-        name: 'Monster Hunter',
+        image: 'assets/batman.png',
+        name: 'Batman',
         description:
-          'Uma agente da ONU e um grupo de soldados de elite embarcam em uma missão para uma ilha do Pacífico. Lá, eles vão enfrentar monstros gigantes que são as vanguardas de uma invasão a Terra.',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum convallis turpis, nec rutrum quam vulputate viverra. Proin ornare dolor sit amet laoreet dignissim. ',
         avaliation: 5,
       },
       {
+        cardId: 2,
         category: 'Ação',
-        totalTime: '1h 30m',
-        image:
-          'https://www.themoviedb.org/t/p/w220_and_h330_face/6vcDalR50RWa309vBH1NLmG2rjQ.jpg',
-        name: 'Monster Hunter',
+        totalTime: '1h 47m',
+        image: 'assets/shang-chi.png',
+        name: 'Shang-Chi',
         description:
-          'Uma agente da ONU e um grupo de soldados de elite embarcam em uma missão para uma ilha do Pacífico. Lá, eles vão enfrentar monstros gigantes que são as vanguardas de uma invasão a Terra.',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum convallis turpis, nec rutrum quam vulputate viverra. Proin ornare dolor sit amet laoreet dignissim. ',
         avaliation: 5,
       },
       {
-        category: 'Ação',
-        totalTime: '1h 30m',
-        image:
-          'https://www.themoviedb.org/t/p/w220_and_h330_face/6vcDalR50RWa309vBH1NLmG2rjQ.jpg',
-        name: 'Monster Hunter',
+        cardId: 3,
+        category: 'Animacao',
+        totalTime: '1h 22m',
+        image: 'assets/wish-dragon.png',
+        name: 'Wish Dragon',
         description:
-          'Uma agente da ONU e um grupo de soldados de elite embarcam em uma missão para uma ilha do Pacífico. Lá, eles vão enfrentar monstros gigantes que são as vanguardas de uma invasão a Terra.',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum convallis turpis, nec rutrum quam vulputate viverra. Proin ornare dolor sit amet laoreet dignissim. ',
+        avaliation: 4,
+      },
+      {
+        cardId: 4,
+        category: 'Ação',
+        totalTime: '1h 55m',
+        image: 'assets/loki.png',
+        name: 'Loki',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum convallis turpis, nec rutrum quam vulputate viverra. Proin ornare dolor sit amet laoreet dignissim. ',
         avaliation: 5,
       },
       {
-        category: 'Ação',
-        totalTime: '1h 30m',
-        image:
-          'https://www.themoviedb.org/t/p/w220_and_h330_face/6vcDalR50RWa309vBH1NLmG2rjQ.jpg',
-        name: 'Monster Hunter',
+        cardId: 5,
+        category: 'Ação/Aventura',
+        totalTime: '2h 15m',
+        image: 'assets/spider-man.png',
+        name: 'Spider Man',
         description:
-          'Uma agente da ONU e um grupo de soldados de elite embarcam em uma missão para uma ilha do Pacífico. Lá, eles vão enfrentar monstros gigantes que são as vanguardas de uma invasão a Terra.',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum convallis turpis, nec rutrum quam vulputate viverra. Proin ornare dolor sit amet laoreet dignissim. ',
         avaliation: 5,
       },
       {
-        category: 'Ação',
-        totalTime: '1h 30m',
-        image:
-          'https://www.themoviedb.org/t/p/w220_and_h330_face/6vcDalR50RWa309vBH1NLmG2rjQ.jpg',
-        name: 'Monster Hunter',
+        cardId: 6,
+        category: 'Aventura/Acao',
+        totalTime: '55m',
+        image: 'assets/the-witcher.png',
+        name: 'The Witcher',
         description:
-          'Uma agente da ONU e um grupo de soldados de elite embarcam em uma missão para uma ilha do Pacífico. Lá, eles vão enfrentar monstros gigantes que são as vanguardas de uma invasão a Terra.',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum convallis turpis, nec rutrum quam vulputate viverra. Proin ornare dolor sit amet laoreet dignissim. ',
         avaliation: 5,
       },
     ];
