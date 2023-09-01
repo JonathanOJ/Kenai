@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { KenaiListComponent } from './kenai-list/kenai-list.component';
 import { KenaiInformationComponent } from './kenai-information/kenai-information.component';
 import { KenaiGalleryComponent } from './kenai-gallery/kenai-gallery.component';
+import { KenaiCategoryComponent } from './kenai-category/kenai-category.component';
+import { KenaiAvaliationComponent } from './kenai-avaliation/kenai-avaliation.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { KenaiGalleryComponent } from './kenai-gallery/kenai-gallery.component';
     KenaiListComponent,
     KenaiInformationComponent,
     KenaiGalleryComponent,
+    KenaiCategoryComponent,
+    KenaiAvaliationComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, MatIconModule, HttpClientModule],
   providers: [],

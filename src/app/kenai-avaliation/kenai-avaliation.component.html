@@ -1,0 +1,16 @@
+<div class="rating">
+  <ng-container *ngFor="let value of [5, 4, 3, 2, 1]">
+    <input
+      type="radio"
+      [name]="'rating_' + movieId"
+      [value]="value"
+      [disabled]="true"
+      [checked]="value === avaliation"
+    />
+    <label
+      [style.fontSize]="fontSize"
+      [style.width]="width"
+      [for]="value + '_' + movieId"
+    ></label>
+  </ng-container>
+</div>

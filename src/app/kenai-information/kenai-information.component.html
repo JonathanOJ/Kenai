@@ -1,33 +1,16 @@
-<section style="display: flex; flex-direction: column; gap: 3vh; color: white">
-  <span
-    style="
-      width: 49px;
-      height: 24px;
-      border-radius: 0px 8px 0px 8px;
-      background-color: rgba(24, 24, 24, 1);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Open Sans';
-      font-weight: 600;
-      font-size: 14px;
-      color: rgba(255, 166, 52, 1);
-    "
-    >{{ category }}</span
-  >
+<section
+  style="
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    color: white;
+    margin-top: 50px;
+  "
+>
+  <kenai-category [category]="category"></kenai-category>
+
   <div style="display: flex; align-items: center; gap: 5px">
-    <div class="rating">
-      <ng-container *ngFor="let value of [5, 4, 3, 2, 1]">
-        <input
-          type="radio"
-          [name]="'rating_' + itemId"
-          [value]="value"
-          [disabled]="true"
-          [checked]="value === avaliation"
-        />
-        <label [for]="value + '_' + itemId"></label>
-      </ng-container>
-    </div>
+    <kenai-avaliation [avaliation]="avaliation"></kenai-avaliation>
     <div
       style="
         display: flex;

@@ -1,5 +1,5 @@
 export class MovieInformationModel {
-  cardId: number = 0;
+  movieId: number = 0;
   name: string = '';
   description: string = '';
   category: string = '';

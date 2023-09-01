@@ -1,4 +1,4 @@
-<section style="height: 60vh; padding: 0 5vh">
+<section style="height: 95vh; padding: 0 5vh">
   <kenai-information
     [category]="selectedItem.category"
     [tittleMovie]="selectedItem.name"
@@ -7,5 +7,9 @@
     [avaliation]="selectedItem.avaliation"
     [totalTime]="selectedItem.totalTime"
   ></kenai-information>
-  <kenai-gallery [movieItens]="movieItens"></kenai-gallery>
+  <kenai-gallery
+    [movieItens]="movieItens"
+    (selectedGallery)="selectedItem = $event"
+    [movieShow]="selectedItem.movieId"
+  ></kenai-gallery>
 </section>
