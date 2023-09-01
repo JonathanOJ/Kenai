@@ -10,7 +10,6 @@ import { KenaiLogoComponent } from './kenai-logo/kenai-logo.component';
 import { KenaiHeaderButtonsComponent } from './kenai-header-buttons/kenai-header-buttons.component';
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
-import { KenaiListComponent } from './kenai-list/kenai-list.component';
 import { KenaiInformationComponent } from './kenai-information/kenai-information.component';
 import { KenaiGalleryComponent } from './kenai-gallery/kenai-gallery.component';
 import { KenaiCategoryComponent } from './kenai-category/kenai-category.component';
@@ -24,7 +23,6 @@ import { KenaiAvaliationComponent } from './kenai-avaliation/kenai-avaliation.co
     KenaiFooterComponent,
     KenaiLogoComponent,
     KenaiHeaderButtonsComponent,
-    KenaiListComponent,
     KenaiInformationComponent,
     KenaiGalleryComponent,
     KenaiCategoryComponent,
