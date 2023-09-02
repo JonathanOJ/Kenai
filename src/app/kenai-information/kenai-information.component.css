@@ -1,1 +1,49 @@
+.body-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  color: white;
+  margin-top: 50px;
+}
 
+.tittle-movie {
+  font-weight: 600;
+  width: 60vh;
+  height: 64px;
+  font-size: 56px;
+}
+
+.button {
+  background: rgba(255, 166, 52, 1);
+  width: 286px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  color: rgba(24, 24, 24, 1);
+  font-size: 24px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.description {
+  font-size: 20px;
+  width: 536px;
+}
+
+@media (max-width: 1440px) {
+  .body-section {
+    margin-top: 30px;
+  }
+  .tittle-movie {
+    font-size: 40px;
+    width: 50vh;
+  }
+  .description {
+    font-size: 18px;
+  }
+}

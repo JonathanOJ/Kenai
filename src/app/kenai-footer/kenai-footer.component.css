@@ -1,0 +1,20 @@
+.kenai-footer {
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: 0 3vw;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+  .kenai-footer {
+    padding-top: 30px;
+  }
+}

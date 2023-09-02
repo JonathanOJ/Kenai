@@ -1,9 +1,8 @@
 <body
   class="body"
   [style.background]="
-    'rgba(18, 18, 20, 1) url(' + selectedItem.banner + ') no-repeat'
+    'url(' + selectedItem.banner + ') no-repeat rgb(18, 18, 20)'
   "
-  [style.backgroundSize]="'contain'"
 >
   <kenai-header></kenai-header>
   <kenai-body (emitSelectedGalleryItem)="selectedItem = $event"></kenai-body>

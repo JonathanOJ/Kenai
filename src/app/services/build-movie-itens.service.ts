@@ -68,7 +68,7 @@ export class BuildMovieItensService {
         category: 'Aventura/Acao',
         totalTime: '55m',
         imageCard: '../assets/the-witcher.png',
-        banner: '../assets/banner-the-witcher.jpg',
+        banner: '../assets/banner-the-witcher.jpeg',
         name: 'The Witcher',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum convallis turpis, nec rutrum quam vulputate viverra. Proin ornare dolor sit amet laoreet dignissim. ',
