@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './kenai-header-buttons.component.html',
   styleUrls: ['./kenai-header-buttons.component.css'],
 })
-export class KenaiHeaderButtonsComponent {}
+export class KenaiHeaderButtonsComponent {
+  activeSearch: boolean = false;
+}

@@ -19,6 +19,46 @@
   gap: 8vh;
 }
 
+.input {
+  width: 200px;
+  margin-right: 20px;
+  border-radius: 8px;
+  height: 26px;
+  border: 1px solid rgb(255, 166, 52);
+  outline: none;
+  padding: 5px 5px;
+}
+
+.inputAnimationIn {
+  animation: inputAnimationIn 0.7s forwards;
+}
+
+.inputAnimationOut {
+  animation: inputAnimationOut 0.7s forwards;
+}
+
+@keyframes inputAnimationIn {
+  from {
+    transform: translateY(-120px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes inputAnimationOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-120px);
+    opacity: 0;
+  }
+}
+
 @media (max-width: 1440px) {
   .lista {
     font-size: 22px;

@@ -1,11 +1,30 @@
-<section class="kenai-header-buttons">
-  <mat-icon class="icon" title="Buscar" svgIcon="magnify"></mat-icon>
-  <span class="lista">Inicio</span>
-  <span class="lista">Minha lista</span>
-  <mat-icon class="icon" title="Noticacoes" svgIcon="bell-outline"></mat-icon>
-  <mat-icon
-    class="icon"
-    title="Meu perfil"
-    svgIcon="account-outline"
-  ></mat-icon>
+<section style="display: flex">
+  <input
+    *ngIf="activeSearch"
+    type="text"
+    class="input"
+    [ngClass]="{ inputAnimationIn: activeSearch }"
+  />
+  <input
+    *ngIf="!activeSearch"
+    type="text"
+    class="input"
+    [ngClass]="{ inputAnimationOut: !activeSearch }"
+  />
+  <div class="kenai-header-buttons">
+    <mat-icon
+      class="icon"
+      title="Buscar"
+      (click)="activeSearch = !activeSearch"
+      svgIcon="magnify"
+    ></mat-icon>
+    <span class="lista">Inicio</span>
+    <span class="lista">Minha lista</span>
+    <mat-icon class="icon" title="Noticacoes" svgIcon="bell-outline"></mat-icon>
+    <mat-icon
+      class="icon"
+      title="Meu perfil"
+      svgIcon="account-outline"
+    ></mat-icon>
+  </div>
 </section>
