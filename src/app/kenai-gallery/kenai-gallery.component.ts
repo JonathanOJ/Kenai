@@ -21,8 +21,6 @@ export class KenaiGalleryComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    console.log(this.movieItens);
-    console.log(this.movieShow);
     this.movieItens.find((item) => {
       if (item.movieId == this.movieShow) {
         let index = this.movieItens.indexOf(item);
@@ -30,12 +28,4 @@ export class KenaiGalleryComponent implements OnInit {
       }
     });
   }
-
-  // ngOnChanges(): void {
-  //   this.movieItens.find((item) => {
-  //     if (item.movieId == this.movieShow) {
-  //       this.movieItens.splice(0, 0, item);
-  //     }
-  //   });
-  // }
 }

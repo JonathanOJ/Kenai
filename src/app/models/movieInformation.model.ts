@@ -4,6 +4,7 @@ export class MovieInformationModel {
   description: string = '';
   category: string = '';
   totalTime: string = '';
-  image: string = '';
+  imageCard: string = '';
+  banner: string = '';
   avaliation: number = 0;
 }

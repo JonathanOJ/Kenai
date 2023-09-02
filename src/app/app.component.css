@@ -1,6 +1,4 @@
 .body {
   height: 125vh;
-  background: url("../assets/background.png") no-repeat;
-  background-color: rgba(18, 18, 20, 1);
-  background-size: contain;
+  font-family: "Open Sans";
 }

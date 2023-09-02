@@ -1,5 +1,11 @@
-<body class="body" style="font-family: 'Open Sans'">
+<body
+  class="body"
+  [style.background]="
+    'rgba(18, 18, 20, 1) url(' + selectedItem.banner + ') no-repeat'
+  "
+  [style.backgroundSize]="'contain'"
+>
   <kenai-header></kenai-header>
-  <kenai-body></kenai-body>
+  <kenai-body (emitSelectedGalleryItem)="selectedItem = $event"></kenai-body>
   <kenai-footer></kenai-footer>
 </body>

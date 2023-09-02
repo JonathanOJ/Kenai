@@ -3,13 +3,13 @@
     [category]="selectedItem.category"
     [tittleMovie]="selectedItem.name"
     [description]="selectedItem.description"
-    [image]="selectedItem.image"
+    [image]="selectedItem.imageCard"
     [avaliation]="selectedItem.avaliation"
     [totalTime]="selectedItem.totalTime"
   ></kenai-information>
   <kenai-gallery
     [movieItens]="movieItens"
-    (selectedGallery)="selectedItem = $event"
+    (selectedGallery)="selectedItem = $event; emitSelectedGallery()"
     [movieShow]="selectedItem.movieId"
   ></kenai-gallery>
 </section>
