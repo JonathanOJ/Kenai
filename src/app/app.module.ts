@@ -14,6 +14,9 @@ import { KenaiInformationComponent } from './kenai-information/kenai-information
 import { KenaiGalleryComponent } from './kenai-gallery/kenai-gallery.component';
 import { KenaiCategoryComponent } from './kenai-category/kenai-category.component';
 import { KenaiAvaliationComponent } from './kenai-avaliation/kenai-avaliation.component';
+import { KenaiLoginComponent } from './kenai-login/kenai-login.component';
+import { KenaiPrincipalScreenComponent } from './kenai-principal-screen/kenai-principal-screen.component';
+import { KenaiUsersComponent } from './kenai-users/kenai-users.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { KenaiAvaliationComponent } from './kenai-avaliation/kenai-avaliation.co
     KenaiGalleryComponent,
     KenaiCategoryComponent,
     KenaiAvaliationComponent,
+    KenaiLoginComponent,
+    KenaiPrincipalScreenComponent,
+    KenaiUsersComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, MatIconModule, HttpClientModule],
   providers: [],

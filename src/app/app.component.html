@@ -1,10 +1,2 @@
-<body
-  class="body"
-  [style.background]="
-    'url(' + selectedItem.banner + ') no-repeat rgb(18, 18, 20)'
-  "
->
-  <kenai-header></kenai-header>
-  <kenai-body (emitSelectedGalleryItem)="selectedItem = $event"></kenai-body>
-  <kenai-footer></kenai-footer>
-</body>
+<router-outlet></router-outlet>
+<!-- Isso é onde as rotas serão carregadas -->

@@ -1,0 +1,80 @@
+.hour {
+	font-weight: 300;
+	font-size: 36px;
+	color: white;
+}
+
+.title {
+	color: white;
+	font-size: 64px;
+	font-family: "Open Sans";
+	font-weight: 300;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 75px;
+}
+
+.subtitle {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+	font-family: "Open Sans";
+	font-weight: 300;
+	font-size: 40px;
+}
+
+.button {
+	width: 230px;
+	background: rgba(24, 24, 24, 1);
+	color: white;
+	padding: 16px 40px;
+	font-size: 20px;
+	font-family: "Open Sans";
+	font-weight: 600;
+	border: 1px solid rgba(136, 136, 136, 0.4);
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 0.1s;
+}
+
+.button:hover {
+	box-shadow: 0 0 10px rgba(255, 166, 52, 1);
+}
+
+.button:active {
+	box-shadow: 0 0 10px rgba(255, 166, 52, 1);
+	transform: scale(0.95);
+}
+
+.main {
+	height: 1000px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 1440px) {
+	.main {
+		height: 85%;
+	}
+
+	.title {
+		font-size: 48px;
+	}
+
+	.subtitle {
+		font-size: 32px;
+	}
+
+	.button {
+		margin-top: 75px;
+	}
+
+	.hour {
+		font-size: 24px;
+	}
+}

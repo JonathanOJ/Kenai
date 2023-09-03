@@ -1,0 +1,18 @@
+<section [ngClass]="{ iconUserDisplay: displayIcons }">
+	<div
+		class="iconUser"
+		(click)="selectedUserEvent()"
+		[style.background]="'linear-gradient(to bottom, ' + user.usuColor + ')'"
+	></div>
+	<span
+		style="
+			color: rgba(168, 168, 168, 1);
+			display: flex;
+			justify-content: center;
+			padding-top: 50px;
+			font-family: 'Open Sans';
+			font-size: 32px;
+		"
+		>{{ user.usuName }}</span
+	>
+</section>

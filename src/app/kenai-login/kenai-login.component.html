@@ -1,0 +1,18 @@
+<section style="font-family: 'Open Sans'; height: 100vh; background: rgba(18, 18, 20, 1)">
+	<footer style="display: flex; justify-content: space-between; align-items: flex-end; padding: 0 30px">
+		<kenai-logo></kenai-logo>
+		<span class="hour">
+			{{ actualHour | date : "hh:mm a" }}
+		</span>
+	</footer>
+	<main class="main">
+		<h1 class="title">Bem-vindo de volta ao Kenai!</h1>
+		<span class="subtitle">Quem está usando?</span>
+		<div style="display: flex; justify-content: center; padding-top: 10vh; gap: 75px">
+			<ng-container *ngFor="let user of users">
+				<kenai-users [user]="user" (emitSelectedUser)="redirectUser($event)"></kenai-users>
+			</ng-container>
+		</div>
+		<button class="button">Adicionar Perfil</button>
+	</main>
+</section>

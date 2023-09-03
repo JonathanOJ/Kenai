@@ -1,70 +1,72 @@
 .icon {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
 }
 
 .lista {
-  font-family: "Open Sans";
-  font-size: 24px;
-  font-weight: 600;
-  cursor: pointer;
+	font-family: "Open Sans";
+	font-size: 24px;
+	font-weight: 600;
+	cursor: pointer;
 }
 
 .kenai-header-buttons {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8vh;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8vh;
 }
 
 .input {
-  width: 200px;
-  margin-right: 20px;
-  border-radius: 8px;
-  height: 26px;
-  border: 1px solid rgb(255, 166, 52);
-  outline: none;
-  padding: 5px 5px;
+	width: 200px;
+	margin-right: 20px;
+	border-radius: 8px;
+	height: 26px;
+	border: 1px solid rgb(255, 166, 52);
+	outline: none;
+	padding: 5px 5px;
+	background: rgba(255, 255, 255, 0.3);
+	color: white;
 }
 
 .inputAnimationIn {
-  animation: inputAnimationIn 0.7s forwards;
+	animation: inputAnimationIn 0.7s forwards;
 }
 
 .inputAnimationOut {
-  animation: inputAnimationOut 0.7s forwards;
+	animation: inputAnimationOut 0.7s forwards;
 }
 
 @keyframes inputAnimationIn {
-  from {
-    transform: translateY(-120px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0px);
-    opacity: 1;
-  }
+	from {
+		transform: translateY(-120px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0px);
+		opacity: 1;
+	}
 }
 
 @keyframes inputAnimationOut {
-  from {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateY(-120px);
-    opacity: 0;
-  }
+	from {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	to {
+		transform: translateY(-120px);
+		opacity: 0;
+	}
 }
 
 @media (max-width: 1440px) {
-  .lista {
-    font-size: 22px;
-  }
+	.lista {
+		font-size: 22px;
+	}
 
-  .kenai-header-buttons {
-    gap: 6vh;
-  }
+	.kenai-header-buttons {
+		gap: 6vh;
+	}
 }
