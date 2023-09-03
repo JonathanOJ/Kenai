@@ -1,57 +1,29 @@
 <section style="margin-top: 11vh">
-  <div style="width: 155px">
-    <div>
-      <h3 style="font-weight: 600; color: white; height: 44px; font-size: 32px">
-        Populares
-      </h3>
-    </div>
-    <div
-      style="width: 61px; background: rgba(255, 166, 52, 1); height: 1.5px"
-    ></div>
-  </div>
-  <div
-    style="
-      display: flex;
-      width: 100%;
-      justify-content: space-between;
-      margin-top: 50px;
-    "
-  >
-    <div
-      *ngFor="let movie of movieItens"
-      class="gallery-item"
-      (click)="selectMovie(movie)"
-    >
-      <div
-        style="display: flex; width: 100%; height: 100%"
-        [style.backgroundImage]="
-          'linear-gradient(to bottom, rgba(24, 24, 24, 0), rgba(24, 24, 24, 0.8)), url(' +
-          movie.imageCard +
-          ')'
-        "
-      >
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            gap: 15px;
-            padding: 25px;
-          "
-        >
-          <kenai-category [category]="movie.category"></kenai-category>
-          <kenai-avaliation
-            [avaliation]="movie.avaliation"
-            [movieId]="movie.movieId"
-            fontSize="16px"
-            width="21px"
-          ></kenai-avaliation>
-          <span
-            style="font-weight: 600; font-size: 24px; width: 100%; color: white"
-            >{{ movie.name }}</span
-          >
-        </div>
-      </div>
-    </div>
-  </div>
+	<div style="width: 155px">
+		<div>
+			<h3 style="font-weight: 600; color: white; height: 44px; font-size: 32px">Populares</h3>
+		</div>
+		<div style="width: 61px; background: rgba(255, 166, 52, 1); height: 1.5px"></div>
+	</div>
+	<div style="display: flex; width: 100%; justify-content: space-between; margin-top: 50px">
+		<div *ngFor="let movie of movieItens" class="gallery-item" (click)="selectMovie(movie)">
+			<div
+				style="display: flex; width: 100%; height: 100%"
+				[style.backgroundImage]="
+					'linear-gradient(to bottom, rgba(24, 24, 24, 0), rgba(24, 24, 24, 0.8)), url(' + movie.imageCard + ')'
+				"
+			>
+				<div style="display: flex; flex-direction: column; justify-content: end; gap: 15px; padding: 25px">
+					<kenai-category [category]="movie.category"></kenai-category>
+					<kenai-avaliation
+						[avaliation]="movie.avaliation"
+						[movieId]="movie.movieId"
+						fontSize="16px"
+						width="21px"
+					></kenai-avaliation>
+					<span style="font-weight: 600; font-size: 24px; width: 100%; color: white">{{ movie.name }}</span>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>

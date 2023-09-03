@@ -1,23 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { KenaiLogoComponent } from './kenai-logo.component';
+import { KenaiLogoComponent } from "./kenai-logo.component";
 
-describe('KenaiLogoComponent', () => {
-  let component: KenaiLogoComponent;
-  let fixture: ComponentFixture<KenaiLogoComponent>;
+describe("KenaiLogoComponent", () => {
+	let component: KenaiLogoComponent;
+	let fixture: ComponentFixture<KenaiLogoComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ KenaiLogoComponent ]
-    })
-    .compileComponents();
+	beforeEach(async () => {
+		await TestBed.configureTestingModule({
+			declarations: [KenaiLogoComponent],
+		}).compileComponents();
 
-    fixture = TestBed.createComponent(KenaiLogoComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+		fixture = TestBed.createComponent(KenaiLogoComponent);
+		component = fixture.componentInstance;
+		fixture.detectChanges();
+	});
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+	it("should create", () => {
+		expect(component).toBeTruthy();
+	});
 });

@@ -1,23 +1,16 @@
 <section class="body-section">
-  <kenai-category [category]="category"></kenai-category>
+	<kenai-category [category]="category"></kenai-category>
 
-  <div style="display: flex; align-items: center; gap: 5px">
-    <kenai-avaliation [avaliation]="avaliation"></kenai-avaliation>
-    <div
-      style="
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-      "
-    >
-      <mat-icon svgIcon="clock-outline"></mat-icon>
-      <span>{{ formatedHour() }}</span>
-    </div>
-  </div>
-  <h1 class="tittle-movie">
-    {{ tittleMovie }}
-  </h1>
-  <p class="description">{{ description }}</p>
-  <button class="button">Assistir agora</button>
+	<div style="display: flex; align-items: center; gap: 5px">
+		<kenai-avaliation [avaliation]="avaliation"></kenai-avaliation>
+		<div style="display: flex; align-items: center; justify-content: center; gap: 5px">
+			<mat-icon svgIcon="clock-outline"></mat-icon>
+			<span>{{ formatedHour() }}</span>
+		</div>
+	</div>
+	<h1 class="tittle-movie">
+		{{ tittleMovie }}
+	</h1>
+	<p class="description">{{ description }}</p>
+	<button class="button">Assistir agora</button>
 </section>

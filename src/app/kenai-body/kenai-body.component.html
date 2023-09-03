@@ -1,15 +1,15 @@
 <section class="kenai-body">
-  <kenai-information
-    [category]="selectedItem.category"
-    [tittleMovie]="selectedItem.name"
-    [description]="selectedItem.description"
-    [image]="selectedItem.imageCard"
-    [avaliation]="selectedItem.avaliation"
-    [totalTime]="selectedItem.totalTime"
-  ></kenai-information>
-  <kenai-gallery
-    [movieItens]="movieItens"
-    (selectedGallery)="selectedItem = $event; emitSelectedGallery()"
-    [movieShow]="selectedItem.movieId"
-  ></kenai-gallery>
+	<kenai-information
+		[category]="selectedItem.category"
+		[tittleMovie]="selectedItem.name"
+		[description]="selectedItem.description"
+		[image]="selectedItem.imageCard"
+		[avaliation]="selectedItem.avaliation"
+		[totalTime]="selectedItem.totalTime"
+	></kenai-information>
+	<kenai-gallery
+		[movieItens]="movieItens"
+		(selectedGallery)="selectedItem = $event; emitSelectedGallery()"
+		[movieShow]="selectedItem.movieId"
+	></kenai-gallery>
 </section>
