@@ -7,4 +7,5 @@ import { Component } from "@angular/core";
 })
 export class KenaiHeaderButtonsComponent {
 	activeSearch: boolean = false;
+	activePerfil: boolean = false;
 }

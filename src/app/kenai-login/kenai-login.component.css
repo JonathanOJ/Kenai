@@ -28,6 +28,7 @@
 
 .button {
 	width: 230px;
+	margin-top: 15vh;
 	background: rgba(24, 24, 24, 1);
 	color: white;
 	padding: 16px 40px;
@@ -50,7 +51,7 @@
 }
 
 .main {
-	height: 1000px;
+	height: 90vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

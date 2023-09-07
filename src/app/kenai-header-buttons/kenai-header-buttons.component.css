@@ -39,6 +39,47 @@
 	animation: inputAnimationOut 0.7s forwards;
 }
 
+.modal-perfil {
+	color: black;
+	position: absolute;
+	top: 60px;
+	width: 100px;
+	height: 35px;
+	right: 25px;
+	border: 1px solid #888888;
+	border-radius: 6px;
+	background: rgb(255 255 255);
+	display: flex;
+	align-items: center;
+	padding-left: 5px;
+}
+
+.icon-perfil {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	cursor: pointer;
+}
+
+.icon-perfil:hover {
+	color: #e4860c;
+}
+
+.perfilAnimationIn {
+	animation: perfilAnimationIn 0.7s forwards;
+}
+
+@keyframes perfilAnimationIn {
+	from {
+		transform: translateX(80px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
 @keyframes inputAnimationIn {
 	from {
 		transform: translateY(-120px);

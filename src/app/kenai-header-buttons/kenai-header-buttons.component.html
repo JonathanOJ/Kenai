@@ -5,7 +5,18 @@
 		<mat-icon class="icon" title="Buscar" (click)="activeSearch = !activeSearch" svgIcon="magnify"></mat-icon>
 		<span class="lista">Inicio</span>
 		<span class="lista">Minha lista</span>
-		<mat-icon class="icon" title="Noticacoes" svgIcon="bell-outline"></mat-icon>
-		<mat-icon class="icon" title="Meu perfil" svgIcon="account-outline"></mat-icon>
+		<mat-icon class="icon" title="Notificacoes" svgIcon="bell-outline"></mat-icon>
+		<mat-icon
+			class="icon"
+			(click)="activePerfil = !activePerfil"
+			title="Meu perfil"
+			svgIcon="account-outline"
+		></mat-icon>
+	</div>
+	<div *ngIf="activePerfil" [ngClass]="{ perfilAnimationIn: activePerfil }" class="modal-perfil">
+		<div class="icon-perfil">
+			<mat-icon svgIcon="power"></mat-icon>
+			<span>Sair</span>
+		</div>
 	</div>
 </section>
