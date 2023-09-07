@@ -1,4 +1,5 @@
 import { Injectable } from "@angular/core";
+import { UserModel } from "../models/userModel.model";
 
 @Injectable({
 	providedIn: "root",
@@ -7,24 +8,68 @@ export class GetUsersService {
 	constructor() {}
 
 	getUsers() {
-		let users = [
+		let users: UserModel[] = [
 			{
-				usuId: 1,
+				usuId: Math.random() * 100,
 				usuName: "Jonathan",
-				usuColor: "rgba(120, 31, 209, 1), rgba(87, 14, 171, 1)",
+				usuColor: "",
 			},
 			{
-				usuId: 2,
+				usuId: Math.random() * 100,
 				usuName: "Iasmin",
-				usuColor: "rgba(100, 250, 155, 1), rgba(95, 227, 106, 1)",
+				usuColor: "",
 			},
 			{
-				usuId: 3,
+				usuId: Math.random() * 100,
 				usuName: "Murilo",
-				usuColor: "rgba(77, 240, 243, 1), rgba(77, 123, 253, 1)",
+				usuColor: "",
 			},
 		];
 
+		for (let i = 0; i < users.length; i++) {
+			let colorPrimary = this.getColor();
+			let colorSecondary = this.getColor();
+
+			let randomColor = `${colorPrimary}, ${colorSecondary}`;
+
+			users[i].usuColor = randomColor;
+		}
+
 		return users;
+	}
+
+	getColor() {
+		let red = this.getRandomRGBValue();
+		let green = this.getRandomRGBValue();
+		let blue = this.getRandomRGBValue();
+
+		return `rgb(${red}, ${green}, ${blue})`;
+	}
+
+	addUser(users: UserModel[]) {
+		if (users.length == 5) {
+			alert("Limite de usuários atingido!");
+			return users;
+		}
+
+		let colorPrimary = this.getColor();
+		let colorSecondary = this.getColor();
+
+		let randomColor = `${colorPrimary}, ${colorSecondary}`;
+
+		let newUser = {
+			usuId: Math.random() * 100,
+			usuName: "New User",
+			usuColor: randomColor,
+		};
+
+		console.log(randomColor);
+
+		users.push(newUser);
+		return users;
+	}
+
+	getRandomRGBValue() {
+		return Math.floor(Math.random() * 256);
 	}
 }

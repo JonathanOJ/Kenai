@@ -8,9 +8,11 @@ import { UserModel } from "../models/userModel.model";
 })
 export class KenaiUsersComponent implements OnInit {
 	@Input() user: UserModel = new UserModel();
+	@Input() userConfig: boolean = false;
 	@Output() emitSelectedUser: EventEmitter<UserModel> = new EventEmitter<UserModel>();
 
 	displayIcons: boolean = false;
+	editName: boolean = false;
 
 	constructor(private renderer: Renderer2) {}
 

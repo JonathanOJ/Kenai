@@ -4,7 +4,7 @@ import { UserModel } from "../models/userModel.model";
 import { GetUsersService } from "../services/get-users.service";
 
 @Component({
-	selector: "app-kenai-login",
+	selector: "kenai-login",
 	templateUrl: "./kenai-login.component.html",
 	styleUrls: ["./kenai-login.component.css"],
 })
@@ -13,6 +13,7 @@ export class KenaiLoginComponent implements OnInit {
 
 	users: UserModel[] = [];
 	selectedUser: UserModel = new UserModel();
+	userConfig: boolean = false;
 
 	constructor(private getUsersService: GetUsersService, private route: Router) {
 		setInterval(() => {
@@ -27,5 +28,9 @@ export class KenaiLoginComponent implements OnInit {
 	redirectUser(user: UserModel): void {
 		this.route.navigate(["/principal-screen", user.usuName]);
 		this.selectedUser = user;
+	}
+
+	addPerfil() {
+		this.users = this.getUsersService.addUser(this.users);
 	}
 }

@@ -25,3 +25,31 @@
 	box-shadow: 0px 6px 30px rgba(255, 38, 122, 0.8);
 	transform: scale(1.1);
 }
+
+.icon-user-config:hover {
+	box-shadow: none;
+	opacity: 0.8;
+	transform: scale(1);
+}
+
+.inputName {
+	color: rgba(168, 168, 168, 1);
+	padding-top: 45px;
+	font-family: "Open Sans";
+	font-size: 32px;
+	background: transparent;
+	border: none;
+	outline: none;
+	width: 175px;
+	text-align: center;
+}
+
+.activeEdit {
+	border-bottom: 1px solid rgba(255, 166, 52, 1);
+	transition: 0.1s;
+}
+
+.displayItem {
+	transition: 0.3s;
+	display: none;
+}

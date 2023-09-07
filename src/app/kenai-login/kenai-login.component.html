@@ -1,4 +1,4 @@
-<section style="font-family: 'Open Sans'; height: 100vh; background: rgba(18, 18, 20, 1)">
+<section style="font-family: 'Open Sans'; height: 100vh; background: rgba(18, 18, 20, 1); transition: 0.3s">
 	<footer style="display: flex; justify-content: space-between; align-items: flex-end; padding: 0 30px">
 		<kenai-logo></kenai-logo>
 		<span class="hour">
@@ -8,11 +8,26 @@
 	<main class="main">
 		<h1 class="title">Bem-vindo de volta ao Kenai!</h1>
 		<span class="subtitle">Quem está usando?</span>
-		<div style="display: flex; justify-content: center; padding-top: 10vh; gap: 75px">
+		<div style="display: flex; justify-content: center; padding-top: 10vh; gap: 75px; transition: 1s">
 			<ng-container *ngFor="let user of users">
-				<kenai-users [user]="user" (emitSelectedUser)="redirectUser($event)"></kenai-users>
+				<kenai-users [user]="user" [userConfig]="userConfig" (emitSelectedUser)="redirectUser($event)"></kenai-users>
 			</ng-container>
 		</div>
-		<button class="button">Adicionar Perfil</button>
+		<div>
+			<button class="button" (click)="addPerfil()">Adicionar Perfil</button>
+			<mat-icon
+				style="
+					color: #a8a8a8;
+					width: 36px;
+					height: 36px;
+					position: relative;
+					bottom: -10px;
+					left: 10px;
+					cursor: pointer;
+				"
+				(click)="userConfig = !userConfig"
+				svgIcon="cog"
+			></mat-icon>
+		</div>
 	</main>
 </section>
