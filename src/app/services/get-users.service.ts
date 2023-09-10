@@ -12,28 +12,19 @@ export class GetUsersService {
 			{
 				usuId: Math.random() * 100,
 				usuName: "Jonathan",
-				usuColor: "",
+				usuColor: this.getColor(),
 			},
 			{
 				usuId: Math.random() * 100,
 				usuName: "Iasmin",
-				usuColor: "",
+				usuColor: this.getColor(),
 			},
 			{
 				usuId: Math.random() * 100,
 				usuName: "Murilo",
-				usuColor: "",
+				usuColor: this.getColor(),
 			},
 		];
-
-		for (let i = 0; i < users.length; i++) {
-			let colorPrimary = this.getColor();
-			let colorSecondary = this.getColor();
-
-			let randomColor = `${colorPrimary}, ${colorSecondary}`;
-
-			users[i].usuColor = randomColor;
-		}
 
 		return users;
 	}
@@ -43,7 +34,11 @@ export class GetUsersService {
 		let green = this.getRandomRGBValue();
 		let blue = this.getRandomRGBValue();
 
-		return `rgb(${red}, ${green}, ${blue})`;
+		let compRed = this.getRandomRGBValue();
+		let compGreen = this.getRandomRGBValue();
+		let compBlue = this.getRandomRGBValue();
+
+		return `rgb(${red}, ${green}, ${blue}), rgb(${compRed}, ${compGreen}, ${compBlue})`;
 	}
 
 	addUser(users: UserModel[]) {
@@ -52,18 +47,11 @@ export class GetUsersService {
 			return users;
 		}
 
-		let colorPrimary = this.getColor();
-		let colorSecondary = this.getColor();
-
-		let randomColor = `${colorPrimary}, ${colorSecondary}`;
-
 		let newUser = {
 			usuId: Math.random() * 100,
 			usuName: "New User",
-			usuColor: randomColor,
+			usuColor: this.getColor(),
 		};
-
-		console.log(randomColor);
 
 		users.push(newUser);
 		return users;

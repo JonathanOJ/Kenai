@@ -1,22 +1,45 @@
 <section style="display: flex">
-	<input *ngIf="activeSearch" type="text" class="input" [ngClass]="{ inputAnimationIn: activeSearch }" />
-	<input *ngIf="!activeSearch" type="text" class="input" [ngClass]="{ inputAnimationOut: !activeSearch }" />
-	<div class="kenai-header-buttons">
-		<mat-icon class="icon" title="Buscar" (click)="activeSearch = !activeSearch" svgIcon="magnify"></mat-icon>
-		<span class="lista">Inicio</span>
-		<span class="lista">Minha lista</span>
-		<mat-icon class="icon" title="Notificacoes" svgIcon="bell-outline"></mat-icon>
-		<mat-icon
-			class="icon"
-			(click)="activePerfil = !activePerfil"
-			title="Meu perfil"
-			svgIcon="account-outline"
-		></mat-icon>
+	<div class="mobile" [ngClass]="{ 'active-modal-mobile': activeModalMobile }">
+		<mat-icon class="menuMobile" svgIcon="menu" (click)="activeModalMobile = !activeModalMobile"></mat-icon>
+		<div style="display: none" class="modal-mobile" [ngClass]="{ 'modal-mobile': activeModalMobile }">
+			<div class="icon-perfil">
+				<mat-icon class="icon" svgIcon="magnify"></mat-icon>
+				<span>Buscar</span>
+			</div>
+			<div class="icon-perfil">
+				<mat-icon class="icon" title="notificações" svgIcon="bell-outline"></mat-icon>
+				<span>Notificações</span>
+			</div>
+			<div class="icon-perfil">
+				<mat-icon class="icon" svgIcon="account-outline"></mat-icon>
+				<span>Meu Perfil</span>
+			</div>
+			<div class="icon-perfil" (click)="logout()">
+				<mat-icon svgIcon="power"></mat-icon>
+				<span>Sair</span>
+			</div>
+		</div>
 	</div>
-	<div *ngIf="activePerfil" [ngClass]="{ perfilAnimationIn: activePerfil }" class="modal-perfil">
-		<div class="icon-perfil">
-			<mat-icon svgIcon="power"></mat-icon>
-			<span>Sair</span>
+	<div class="desktop">
+		<input *ngIf="activeSearch" type="text" class="input" [ngClass]="{ inputAnimationIn: activeSearch }" />
+		<input *ngIf="!activeSearch" type="text" class="input" [ngClass]="{ inputAnimationOut: !activeSearch }" />
+		<div class="kenai-header-buttons">
+			<mat-icon class="icon" title="Buscar" (click)="activeSearch = !activeSearch" svgIcon="magnify"></mat-icon>
+			<span class="lista">Inicio</span>
+			<span class="lista">Minha lista</span>
+			<mat-icon class="icon" title="Notificacoes" svgIcon="bell-outline"></mat-icon>
+			<mat-icon
+				class="icon"
+				(click)="activePerfil = !activePerfil"
+				title="Meu perfil"
+				svgIcon="account-outline"
+			></mat-icon>
+		</div>
+		<div *ngIf="activePerfil" [ngClass]="{ perfilAnimationIn: activePerfil }" class="modal-perfil">
+			<div class="icon-perfil" (click)="logout()">
+				<mat-icon svgIcon="power"></mat-icon>
+				<span>Sair</span>
+			</div>
 		</div>
 	</div>
 </section>

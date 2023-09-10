@@ -1,4 +1,17 @@
-<body class="body" [style.background]="'url(' + selectedItem.banner + ') no-repeat rgb(18, 18, 20)'">
+<body class="body-desktop" [style.background]="'url(' + selectedItem.banner + ') no-repeat rgb(18, 18, 20)'">
+	<kenai-header></kenai-header>
+	<kenai-body (emitSelectedGalleryItem)="selectedItem = $event"></kenai-body>
+	<kenai-footer></kenai-footer>
+</body>
+
+<body
+	class="body-mobile"
+	[style.background]="
+		'linear-gradient(to bottom, rgba(29, 29, 29, 1), rgba(29, 29, 29, 0)), url(' +
+		selectedItem.banner +
+		') no-repeat center top rgb(18, 18, 20)'
+	"
+>
 	<kenai-header></kenai-header>
 	<kenai-body (emitSelectedGalleryItem)="selectedItem = $event"></kenai-body>
 	<kenai-footer></kenai-footer>

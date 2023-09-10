@@ -1,19 +1,45 @@
-<section style="font-family: 'Open Sans'; height: 100vh; background: rgba(18, 18, 20, 1); transition: 0.3s">
-	<footer style="display: flex; justify-content: space-between; align-items: flex-end; padding: 0 30px">
+<section
+	style="
+		font-family: 'Open Sans';
+		height: 100%;
+		background-image: linear-gradient(
+			to right bottom,
+			#000000,
+			#070103,
+			#0b0208,
+			#0e030e,
+			#0e0514,
+			#0e0517,
+			#0d061b,
+			#0a071e,
+			#090521,
+			#080425,
+			#070228,
+			#06002b
+		);
+		transition: 0.3s;
+	"
+>
+	<header class="header-login">
 		<kenai-logo></kenai-logo>
 		<span class="hour">
 			{{ actualHour | date : "hh:mm a" }}
 		</span>
-	</footer>
+	</header>
 	<main class="main">
 		<h1 class="title">Bem-vindo de volta ao Kenai!</h1>
 		<span class="subtitle">Quem está usando?</span>
-		<div style="display: flex; justify-content: center; padding-top: 10vh; gap: 75px; transition: 1s">
+		<div class="container-users">
 			<ng-container *ngFor="let user of users">
-				<kenai-users [user]="user" [userConfig]="userConfig" (emitSelectedUser)="redirectUser($event)"></kenai-users>
+				<kenai-users
+					[user]="user"
+					[userConfig]="userConfig"
+					(emitSelectedUser)="redirectUser($event)"
+					(emitDeleteUser)="deleteUser($event)"
+				></kenai-users>
 			</ng-container>
 		</div>
-		<div>
+		<div class="bottom-buttons">
 			<button class="button" (click)="addPerfil()">Adicionar Perfil</button>
 			<mat-icon
 				style="

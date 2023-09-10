@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
 	selector: "kenai-header-buttons",
@@ -8,4 +9,11 @@ import { Component } from "@angular/core";
 export class KenaiHeaderButtonsComponent {
 	activeSearch: boolean = false;
 	activePerfil: boolean = false;
+	activeModalMobile: boolean = false;
+
+	constructor(private route: Router) {}
+
+	logout() {
+		this.route.navigate(["/login"]);
+	}
 }

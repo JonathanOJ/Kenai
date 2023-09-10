@@ -1,5 +1,24 @@
-.body {
+.body-desktop {
 	height: 100%;
+	width: 100vw;
 	font-family: "Open Sans";
 	background-size: contain !important;
+}
+
+.body-mobile {
+	display: none;
+}
+
+@media (max-width: 425px) {
+	.body-desktop {
+		display: none;
+	}
+
+	.body-mobile {
+		display: block;
+		height: 100%;
+		width: 100vw;
+		font-family: "Open Sans";
+		background-size: 200% !important;
+	}
 }

@@ -26,6 +26,21 @@
 	transform: scale(1.1);
 }
 
+.iconUserDelete {
+	animation: iconUserDelete 0.3s forwards;
+}
+
+@keyframes iconUserDelete {
+	from {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	to {
+		transform: translateY(-50px);
+		opacity: 0;
+	}
+}
+
 .icon-user-config:hover {
 	box-shadow: none;
 	opacity: 0.8;
@@ -52,4 +67,49 @@
 .displayItem {
 	transition: 0.3s;
 	display: none;
+}
+
+.delete-icon {
+	color: #9c9c9c;
+	position: relative;
+	left: 65px;
+	top: 65px;
+	width: 50px;
+	height: 50px;
+}
+
+.delete-icon:hover {
+	color: #ff267a;
+}
+
+.icon-pencil {
+	color: #ffa634;
+	position: relative;
+	bottom: -57px;
+	cursor: pointer;
+}
+
+@media (max-width: 425px) {
+	.iconUser {
+		width: 136px;
+		height: 136px;
+	}
+
+	.inputName {
+		font-size: 18px;
+		width: 136px;
+	}
+
+	.delete-icon {
+		left: 45px;
+		top: 47px;
+	}
+
+	.icon-pencil {
+		position: absolute;
+		bottom: 3px;
+		right: -25px;
+		width: 20px;
+		height: 20px;
+	}
 }

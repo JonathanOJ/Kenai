@@ -10,9 +10,23 @@
 	box-shadow: 0px 5px 25px rgba(255, 166, 52, 0.7);
 }
 
+.title-populares {
+	font-weight: 600;
+	color: white;
+	height: 44px;
+	font-size: 32px;
+}
+
 @media (max-width: 1440px) {
 	.gallery-item {
 		width: 250px;
 		height: 400px;
+	}
+}
+
+@media (max-width: 425px) {
+	.title-populares {
+		font-size: 24px;
+		height: 32px;
 	}
 }

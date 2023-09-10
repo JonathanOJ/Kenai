@@ -13,8 +13,39 @@
 	cursor: pointer;
 }
 
+.logo {
+	font-family: "Mukta";
+	font-weight: 700;
+	font-size: 40px;
+}
+
+.container-icons {
+	display: flex;
+	gap: 50px;
+}
+
 @media (max-width: 1440px) {
 	.kenai-footer {
 		padding-top: 30px;
+	}
+}
+
+@media (max-width: 425px) {
+	.logo {
+		display: none;
+	}
+
+	.kenai-footer {
+		display: flex;
+		justify-content: center;
+	}
+
+	.icon {
+		width: 26px;
+		height: 26px;
+	}
+
+	.container-icons {
+		gap: 70px;
 	}
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { UserModel } from "../models/userModel.model";
 import { GetUsersService } from "../services/get-users.service";
+import { CookieService } from "ngx-cookie-service";
 
 @Component({
 	selector: "kenai-login",
@@ -15,14 +16,19 @@ export class KenaiLoginComponent implements OnInit {
 	selectedUser: UserModel = new UserModel();
 	userConfig: boolean = false;
 
-	constructor(private getUsersService: GetUsersService, private route: Router) {
+	constructor(private getUsersService: GetUsersService, private route: Router, private coockieService: CookieService) {
 		setInterval(() => {
 			this.actualHour = new Date();
 		}, 60000);
 	}
 
 	ngOnInit(): void {
-		this.users = this.getUsersService.getUsers();
+		if (!this.coockieService.check("users")) {
+			this.users = this.getUsersService.getUsers();
+			this.coockieService.set("users", JSON.stringify(this.users));
+		} else {
+			this.users = JSON.parse(this.coockieService.get("users"));
+		}
 	}
 
 	redirectUser(user: UserModel): void {
@@ -32,5 +38,10 @@ export class KenaiLoginComponent implements OnInit {
 
 	addPerfil() {
 		this.users = this.getUsersService.addUser(this.users);
+	}
+
+	deleteUser(userId: number) {
+		let index = this.users.findIndex((user) => user.usuId == userId);
+		this.users.splice(index, 1);
 	}
 }

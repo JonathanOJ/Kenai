@@ -10,9 +10,11 @@ export class KenaiUsersComponent implements OnInit {
 	@Input() user: UserModel = new UserModel();
 	@Input() userConfig: boolean = false;
 	@Output() emitSelectedUser: EventEmitter<UserModel> = new EventEmitter<UserModel>();
+	@Output() emitDeleteUser: EventEmitter<number> = new EventEmitter<number>();
 
 	displayIcons: boolean = false;
 	editName: boolean = false;
+	deleteUser: boolean = false;
 
 	constructor(private renderer: Renderer2) {}
 
@@ -21,6 +23,14 @@ export class KenaiUsersComponent implements OnInit {
 	}
 
 	selectedUserEvent(): void {
-		this.emitSelectedUser.emit(this.user);
+		if (!this.userConfig) {
+			this.emitSelectedUser.emit(this.user);
+		}
+	}
+
+	deleteUserEvent(): void {
+		setTimeout(() => {
+			this.emitDeleteUser.emit(this.user.usuId);
+		}, 300);
 	}
 }
