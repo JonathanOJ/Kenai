@@ -4,9 +4,9 @@ import { KenaiLoginComponent } from "./kenai-login/kenai-login.component";
 import { KenaiPrincipalScreenComponent } from "./kenai-principal-screen/kenai-principal-screen.component";
 
 const routes: Routes = [
-	{ path: "kenai/login/", component: KenaiLoginComponent },
-	{ path: "kenai/principal-screen/:username/", component: KenaiPrincipalScreenComponent },
-	{ path: "kenai/", redirectTo: "kenai/login/", pathMatch: "full" },
+	{ path: "Kenai/login", component: KenaiLoginComponent },
+	{ path: "Kenai/principal-screen/:username", component: KenaiPrincipalScreenComponent },
+	{ path: "", redirectTo: "Kenai/login", pathMatch: "full" },
 ];
 
 @NgModule({
