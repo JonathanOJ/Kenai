@@ -6,7 +6,7 @@ import { KenaiPrincipalScreenComponent } from "./kenai-principal-screen/kenai-pr
 const routes: Routes = [
 	{ path: "login", component: KenaiLoginComponent },
 	{ path: "principal-screen/:username", component: KenaiPrincipalScreenComponent },
-	{ path: "", redirectTo: "/pagina-principal", pathMatch: "full" },
+	{ path: "", redirectTo: "/login", pathMatch: "full" },
 ];
 
 @NgModule({

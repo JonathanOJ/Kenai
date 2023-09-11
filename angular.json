@@ -87,7 +87,7 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": { "baseHref": "/Kenai/" }
+          "options": { "baseHref": "/Kenai/login" }
         }
       }
     }
