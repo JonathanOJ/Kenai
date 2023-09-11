@@ -10,6 +10,13 @@
 	box-shadow: 0px 5px 25px rgba(255, 166, 52, 0.7);
 }
 
+.gallery-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	gap: 25px;
+}
+
 .title-populares {
 	font-weight: 600;
 	color: white;
@@ -28,5 +35,10 @@
 	.title-populares {
 		font-size: 24px;
 		height: 32px;
+	}
+
+	.gallery-container {
+		max-width: 100%;
+		overflow: auto;
 	}
 }

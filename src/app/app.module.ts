@@ -18,6 +18,7 @@ import { KenaiLoginComponent } from "./kenai-login/kenai-login.component";
 import { KenaiPrincipalScreenComponent } from "./kenai-principal-screen/kenai-principal-screen.component";
 import { KenaiUsersComponent } from "./kenai-users/kenai-users.component";
 import { FormsModule } from "@angular/forms";
+import { CookieService } from "ngx-cookie-service";
 
 @NgModule({
 	declarations: [
@@ -36,7 +37,7 @@ import { FormsModule } from "@angular/forms";
 		KenaiUsersComponent,
 	],
 	imports: [BrowserModule, AppRoutingModule, MatIconModule, HttpClientModule, FormsModule],
-	providers: [],
+	providers: [CookieService],
 	bootstrap: [AppComponent],
 })
 export class AppModule {

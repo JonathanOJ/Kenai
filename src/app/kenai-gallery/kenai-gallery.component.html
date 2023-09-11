@@ -5,9 +5,7 @@
 		</div>
 		<div style="width: 61px; background: rgba(255, 166, 52, 1); height: 1.5px"></div>
 	</div>
-	<div
-		style="display: flex; max-width: 100%; justify-content: space-between; margin-top: 50px; overflow: auto; gap: 25px"
-	>
+	<div class="gallery-container">
 		<div *ngFor="let movie of movieItens" class="gallery-item" (click)="selectMovie(movie)">
 			<div
 				style="display: flex; width: 100%; height: 100%"
