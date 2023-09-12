@@ -55,6 +55,7 @@
 
 	.button {
 		width: 100%;
+		transition: 0ms;
 	}
 
 	.button:hover {
