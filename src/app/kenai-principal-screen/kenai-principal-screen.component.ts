@@ -1,4 +1,4 @@
-import { Component, OnChanges, OnInit } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { MovieInformationModel } from "../models/movieInformation.model";
 
 @Component({
@@ -14,7 +14,7 @@ export class KenaiPrincipalScreenComponent implements OnInit {
 	constructor() {}
 
 	ngOnInit(): void {
-		this.selectedItem ? (this.selectedItem.banner = "../assets/banner-batman.png") : "";
+		this.selectedItem ? (this.selectedItem.banner = "./assets/banner-batman.png") : "";
 		if (window.innerWidth <= 425) {
 			this.displayMobile = true;
 		}

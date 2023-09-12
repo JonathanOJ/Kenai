@@ -41,4 +41,8 @@
 		max-width: 100%;
 		overflow: auto;
 	}
+
+	.gallery-item:hover {
+		transform: scale(1);
+	}
 }

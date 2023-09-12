@@ -2,3 +2,9 @@
 	height: fit-content;
 	padding: 0 5vh;
 }
+
+@media (max-width: 425px) {
+	.kenai-body {
+		padding: 0 2vh;
+	}
+}
