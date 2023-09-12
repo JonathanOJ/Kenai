@@ -9,3 +9,15 @@
 	padding-top: 20px;
 	cursor: pointer;
 }
+
+@media (max-width: 425px) {
+	.logo {
+		font-size: 32px;
+	}
+}
+
+@media (max-width: 375px) {
+	.logo {
+		font-size: 24px;
+	}
+}

@@ -66,3 +66,37 @@
 		transform: scale(0.9);
 	}
 }
+
+@media (max-width: 375px) {
+	.tittle-movie {
+		font-size: 32px;
+		height: 40px;
+	}
+
+	.description {
+		font-size: 14px;
+	}
+
+	.icon-hour {
+		width: 20px;
+		height: 20px;
+	}
+	.button {
+		height: 50px;
+	}
+}
+
+@media (max-width: 320px) {
+	.tittle-movie {
+		font-size: 28px;
+		height: 36px;
+	}
+
+	.icon-hour {
+		width: 16px;
+		height: 16px;
+	}
+	.button {
+		height: 45px;
+	}
+}
