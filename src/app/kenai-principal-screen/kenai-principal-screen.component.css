@@ -17,8 +17,10 @@
 	.body-mobile {
 		display: block;
 		height: 100%;
-		width: 100vw;
+		max-width: 100%;
 		font-family: "Open Sans";
 		background-size: 200% !important;
+		box-sizing: border-box;
+		overflow-x: hidden;
 	}
 }
