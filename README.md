@@ -1,27 +1,30 @@
-# Kenai
+# Kenai - Plataforma de Catálogo de filmes com Angular e Typescript
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+Kenai é uma plataforma de catálogo de filmes desenvolvida com Angular e Typescript. Este projeto foi criado com o propósito de praticar conceitos de orientação a objetos, implementação de animações com CSS e garantir uma experiência responsiva aos usuários.
 
-## Development server
+## Recursos Principais:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Orientação a Objetos:
+Utilizamos princípios de orientação a objetos para construir uma arquitetura sólida e organizada para a plataforma.
 
-## Code scaffolding
+- Animações com CSS: 
+Implementamos animações elegantes e interativas usando CSS para melhorar a experiência do usuário.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Responsividade: 
+A plataforma foi desenvolvida com foco na adaptação a diferentes tamanhos de tela, proporcionando uma experiência consistente em dispositivos variados.
 
-## Build
+Esta plataforma serve como um projeto de aprendizado e prática para demonstrar meu compromisso com o desenvolvimento de aplicativos web de alta qualidade e interativos.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Link de acesso
 
-## Running unit tests
+https://jonathanoj.github.io/Kenai/
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Funcionalidades Principais
 
-## Running end-to-end tests
+Perfis de Usuário: Gerencie múltiplos perfis de usuário.
+Sistema de Recomendação: Recomendações de conteúdos mais populares no momento.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Pré-Requisitos
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Node.js (v14 ou superior)
+Angular CLI (v12 ou superior)
