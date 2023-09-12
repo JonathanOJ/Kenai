@@ -59,7 +59,7 @@
 	}
 
 	.button:hover {
-		transform: scale(1);
+		transform: none;
 	}
 
 	.button:active {
