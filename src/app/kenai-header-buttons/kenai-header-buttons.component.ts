@@ -14,6 +14,6 @@ export class KenaiHeaderButtonsComponent {
 	constructor(private route: Router) {}
 
 	logout() {
-		this.route.navigate(["/login"]);
+		this.route.navigate(["Kenai/login/"]);
 	}
 }

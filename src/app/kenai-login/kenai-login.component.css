@@ -51,7 +51,7 @@
 }
 
 .main {
-	height: 90vh;
+	height: 93vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -63,6 +63,7 @@
 	justify-content: space-between;
 	align-items: flex-end;
 	padding: 0 30px;
+	height: 7vh;
 }
 
 .container-users {
@@ -78,10 +79,6 @@
 }
 
 @media (max-width: 1440px) {
-	.main {
-		height: 85%;
-	}
-
 	.title {
 		font-size: 48px;
 	}

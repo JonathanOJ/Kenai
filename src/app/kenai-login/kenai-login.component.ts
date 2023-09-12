@@ -32,7 +32,7 @@ export class KenaiLoginComponent implements OnInit {
 	}
 
 	redirectUser(user: UserModel): void {
-		this.route.navigate(["/principal-screen", user.usuName]);
+		this.route.navigate(["Kenai/principal-screen/" + user.usuName + "/"]);
 		this.selectedUser = user;
 	}
 
