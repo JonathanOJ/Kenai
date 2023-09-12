@@ -97,6 +97,10 @@
 }
 
 @media (max-width: 425px) {
+	.main {
+		height: 100%;
+	}
+
 	.hour {
 		display: none;
 	}

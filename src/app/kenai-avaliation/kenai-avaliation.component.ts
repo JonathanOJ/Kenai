@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 
 @Component({
 	selector: "kenai-avaliation",
@@ -10,4 +10,6 @@ export class KenaiAvaliationComponent {
 	@Input() movieId: number = 0;
 	@Input() fontSize: string = "19px";
 	@Input() width: string = "30px";
+
+	constructor() {}
 }
