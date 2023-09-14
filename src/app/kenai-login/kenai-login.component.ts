@@ -38,10 +38,12 @@ export class KenaiLoginComponent implements OnInit {
 
 	addPerfil() {
 		this.users = this.getUsersService.addUser(this.users);
+		this.coockieService.set("users", JSON.stringify(this.users));
 	}
 
 	deleteUser(userId: number) {
 		let index = this.users.findIndex((user) => user.usuId == userId);
 		this.users.splice(index, 1);
+		this.coockieService.set("users", JSON.stringify(this.users));
 	}
 }
