@@ -1,6 +1,7 @@
 .body-desktop {
 	height: 100%;
 	width: 100vw;
+	max-width: 100%;
 	font-family: "Open Sans";
 	background-size: contain !important;
 }
